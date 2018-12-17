@@ -1,0 +1,12 @@
+- name: GET NSD version
+  hosts: nsd
+  connection: local
+
+  
+
+  tasks:
+    - name: run show version on remote devices
+      ios_command:
+        commands: 
+         - show version
+         - show ip int brie
